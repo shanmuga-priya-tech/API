@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-def create_App():
+def create_app():
     app=Flask(__name__)
     client=MongoClient(os.getenv("MONGODB_URI"))
     app.db=client.api
